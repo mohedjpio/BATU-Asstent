@@ -1,0 +1,65 @@
+.dark {
+  /* ── Surfaces ──────────────────────────────────────── */
+  --bg-page:    #091810;
+  --bg-card:    #0f2219;
+  --bg-muted:   #0c1c14;
+  --bg-subtle:  #132a20;
+  --primary:    #9ed0cc;
+  --secondary:  #88d5c2;
+  --primary-container: #2d5e5b;
+
+  /* ── Text ──────────────────────────────────────────── */
+  --text-h:         #e6f2ee;
+  --text-primary:   #c8ddd6;
+  --text-secondary: #8fb5a8;
+  --text-muted:     #5e8a7a;
+
+  /* ── Borders ───────────────────────────────────────── */
+  --border:    #1a3b2e;
+  --border-md: #245040;
+
+  /* ── Buttons ───────────────────────────────────────── */
+  --btn-primary-bg:    var(--teal-600);
+  --btn-primary-hover: var(--teal-700);
+  --btn-primary-sh:    0 4px 20px rgba(15,140,110,.25);
+  --btn-accent-bg:     var(--amber-400);
+  --btn-accent-hover:  var(--amber-500);
+  --btn-accent-sh:     0 4px 20px rgba(251,191,36,.25);
+
+  /* ── Badges ────────────────────────────────────────── */
+  --badge-amber-bg:     rgba(254,243,199,.08);
+  --badge-amber-color:  var(--amber-400);
+  --badge-amber-border: rgba(251,191,36,.2);
+  --badge-teal-bg:      rgba(15,104,80,.1);
+  --badge-teal-border:  rgba(15,104,80,.2);
+
+  /* ── Cards ─────────────────────────────────────────── */
+  --card-hover-border: #245040;
+  --card-hover-sh:     0 8px 32px rgba(0,0,0,.4);
+  --sh-sm:             0 1px 2px rgba(0,0,0,.3);
+  --sh-md:             0 4px 6px -1px rgba(0,0,0,.4), 0 2px 4px -1px rgba(0,0,0,.2);
+
+  /* ── Steps ─────────────────────────────────────────── */
+  --step-icon-bg:     rgba(15,104,80,.1);
+  --step-icon-color:  var(--teal-400);
+  --step-icon-border: rgba(76,201,168,.2);
+
+  /* ── Navigation / Footer ───────────────────────────── */
+  --nav-bg:     rgba(5,13,9,.94);
+  --nav-border: rgba(255,255,255,.05);
+  --footer-bg:  #050d09;
+
+  /* ── Chat Specific ─────────────────────────────────── */
+  --chat-sidebar-bg: #050d09;
+  --chat-header-bg: #091810;
+  --chat-header-text: #c8ddd6;
+  --chat-header-border: #1a3b2e;
+  --chat-bubble-bot-bg: #0f2219;
+  --chat-bubble-bot-border: #1a3b2e;
+  --chat-bubble-bot-text: #c8ddd6;
+  --chat-input-area-bg: #091810;
+  --chat-input-area-border: #1a3b2e;
+  --chat-input-box-bg: #0c1c14;
+  --chat-input-box-border: #1a3b2e;
+  --chat-scroll-thumb: #1a3b2e;
+}

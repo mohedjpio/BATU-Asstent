@@ -1,0 +1,112 @@
+@import './theme-light.css';
+@import './theme-dark.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════
+   BATU Design System — CSS Custom Properties
+   Used by LearnPage (inline styles) and shared across app
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette: Teal ─────────────────────────────────── */
+  --teal-100: #e6f7f2;
+  --teal-200: #b2e5d8;
+  --teal-300: #6dd8be;
+  --teal-400: #4cc9a8;
+  --teal-500: #2db592;
+  --teal-600: #0f8c6e;
+  --teal-700: #0f6850;
+  --teal-800: #0a4f3d;
+  --teal-900: #073b2e;
+  --teal-950: #042b22;
+
+  /* ── Palette: Amber ────────────────────────────────── */
+  --amber-300: #fcd34d;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-800: #92400e;
+
+  /* ── Radius ────────────────────────────────────────── */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  14px;
+  --r-xl:  18px;
+  --r-2xl: 24px;
+
+  /* ── Typography ────────────────────────────────────── */
+  --f-display: 'Public Sans', sans-serif;
+  --f-arabic:  'Inter', 'Public Sans', sans-serif;
+
+  /* ── Easing ────────────────────────────────────────── */
+  --ease:     cubic-bezier(.4,0,.2,1);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* ═══════════════════════════════════════════════════════════
+   Base Resets
+   ═══════════════════════════════════════════════════════════ */
+
+@layer base {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar (Chat area) ───────────────────────────── */
+.chat-scroll::-webkit-scrollbar { width: 5px; }
+.chat-scroll::-webkit-scrollbar-track { background: transparent; }
+.chat-scroll::-webkit-scrollbar-thumb { background: #c0c8c7; border-radius: 99px; }
+.chat-scroll::-webkit-scrollbar-thumb:hover { background: #9aa8a6; }
+
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 99px; }
+
+/* ═══════════════════════════════════════════════════════════
+   Keyframe Animations
+   ═══════════════════════════════════════════════════════════ */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes dotPulse {
+  0%, 80%, 100% { transform: scale(0.45); opacity: 0.25; }
+  40%           { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
